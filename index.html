@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)file:///C:/Users/ochin/Downloads/Countewwwr.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +10,10 @@
     justify-content: left;
     font-size: 36px;
     margin-bottom: 20px;
+  }
+  .cou2 {
+    width: 60px;
+    font-size: 20px;
   }
   .counter label {
     margin-right: 10px;
@@ -63,7 +66,7 @@
   }
   .mozi {
     top: 0;
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 10px; /* 適切な間隔を設定してください */
   }
   .bar-inner {
@@ -89,21 +92,21 @@
   <button id="decrementBu">-</button>
   <input type="number" id="bu" value="0" min="0" step="1">
   <button id="incrementBu">🍇</button>
-<span id="buRatio">(1/607.00)</span></div><div class="counter">
+<span id="buRatio">(1/Infinity)</span></div><div class="counter">
   <button id="decrementChe">-</button>
   <input type="number" id="che" value="0" min="0" step="1">
   <button id="incrementChe">🍒</button>
-<span id="cheRatio">(1/505.83)</span></div><div class="counter">
+<span id="cheRatio">(1/Infinity)</span></div><div class="counter">
   
   <button id="decrementBig">-</button><input type="number" id="bigCount" value="0" min="0" step="1">
   
   <button id="incrementBig">BIG</button>
-<span id="bigRatio">(1/337.22)</span></div>
+<span id="bigRatio">(1/86.71)</span></div>
 
 <div class="counter">
   
   <button id="decrementReg">-</button><input type="number" id="regCount" value="0" min="0" step="1">
-  <button id="incrementReg">REG</button><span id="regRatio">(1/275.91)</span>
+  <button id="incrementReg">REG</button><span id="regRatio">(1/101.17)</span>
   
 </div>
 
@@ -114,7 +117,7 @@
 <div class="counter">
   
   <button id="no"></button><input type="number" id="bonusCount" value="0" min="0" step="1">
-  <button id="no">合成</button><span id="bonusRatio">(1/151.75)</span>
+  <button id="no">合成</button><span id="bonusRatio">(1/46.69)</span>
   
 </div>
 <div class="mozi">
@@ -122,31 +125,31 @@
   
   <span>設定</span>
   
-<span style="margin-left:250pt" id="hama">設定</span></div><div class="chart">
+<span style="margin-left:240pt">確率</span><input type="number" class="cou2" style="margin-left:50pt" id="hama"><span style="a">回転後まで<br>　　　　　　　　　　　　　　　　　　　　　　　　ハマる確率</span></div><div class="chart">
   <div class="bar">
     
-    <div class="bar-inner" id="bar1" style="width:25%;"></div>
-  <span class="bar-number">1</span><span class="bar-left" id="ka1">1</span></div>
+    <div class="bar-inner" id="bar1" style="width: 0%;"></div>
+  <span class="bar-number">1</span><span class="bar-left" id="ka1">0%</span><span class="bar-left" id="kak1" style="margin-left:110pt">60.5%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar2" style="width:50%;"></div>
-  <span class="bar-number">2</span><span class="bar-left" id="ka2">1</span></div>
+    <div class="bar-inner" id="bar2" style="width: 0%;"></div>
+  <span class="bar-number">2</span><span class="bar-left" id="ka2">0%</span><span class="bar-left" id="kak2" style="margin-left:110pt">59.6%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar3" style="width: 75%;"></div>
-  <span class="bar-number">3</span><span class="bar-left" id="ka3">1</span></div>
+    <div class="bar-inner" id="bar3" style="width: 0%;"></div>
+  <span class="bar-number">3</span><span class="bar-left" id="ka3">0%</span><span class="bar-left" id="kak3" style="margin-left:110pt">57.5%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar4" style="width: 90%;"></div>
-  <span class="bar-number">4</span><span class="bar-left" id="ka4">1</span></div>
+    <div class="bar-inner" id="bar4" style="width: 0.02%;"></div>
+  <span class="bar-number">4</span><span class="bar-left" id="ka4">0.02%</span><span class="bar-left" id="kak4" style="margin-left:110pt">54.5%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar5" style="width: 100%;"></div>
-  <span class="bar-number">5</span><span class="bar-left" id="ka5">1</span></div>
+    <div class="bar-inner" id="bar5" style="width: 0.08%;"></div>
+  <span class="bar-number">5</span><span class="bar-left" id="ka5">0.08%</span><span class="bar-left" id="kak5" style="margin-left:110pt">52.2%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar6" style="width: 85%;"></div>
-  <span class="bar-number">6</span><span class="bar-left" id="ka6">1</span></div>
+    <div class="bar-inner" id="bar6" style="width: 0.89%;"></div>
+  <span class="bar-number">6</span><span class="bar-left" id="ka6">0.89%</span><span class="bar-left" id="kak6" style="margin-left:110pt">48.7%</span></div>
 </div>
 
 <script>
@@ -178,6 +181,12 @@
   var ka4s = document.getElementById('ka4');
   var ka5s = document.getElementById('ka5');
   var ka6s = document.getElementById('ka6');
+  var kak1s = document.getElementById('kak1');
+  var kak2s = document.getElementById('kak2');
+  var kak3s = document.getElementById('kak3');
+  var kak4s = document.getElementById('kak4');
+  var kak5s = document.getElementById('kak5');
+  var kak6s = document.getElementById('kak6');
 
 
   // カウンターの値を更新する関数
@@ -310,51 +319,24 @@
       updateRatios();
     }
   });
-    
-    // コンビネーション計算関数
-    var max_combi=9e15;
-    function combi_reduction(n, k){
-      if(k*2 > n) k=n-k;
-      if(k===0) return 1;
-      if(k===1) return n;
-      function gcd(x, y){
-        var t;
-        while(y){
-          t = x % y;
-          x = y;
-          y = t; 
-        }
-        return x;
-      }
-      var num=1, denom=1, tmp, i;
-      var nums=[], denoms=[];
-      for(i=0; i<k; ++i){
-        nums.push(n-i);
-        denoms.push(k-i);
-      }
-      while(denoms.length){
-        while(denoms.length){
-          tmp = denom * denoms[denoms.length-1];
-          if(tmp > max_combi) break;
-          denom = tmp;
-          denoms.pop();
-        }
-        while(nums.length){
-          tmp = num * nums[nums.length-1];
-          if(tmp > max_combi) break;
-          num = tmp;
-          nums.pop();
-        }
-        tmp = gcd(num, denom);
-        num /= tmp;
-        denom /= tmp;
-      }
-      for(i=0;i<nums.length;++i){
-        num *= nums[i];
-      }
-      return num / denom;
-    }
 
+function combi_reduction(n, k) {
+  if (k * 2n > n) k = n - k;
+  if (k === 0n) return 1n;
+  if (k === 1n) return n;
+
+  var numerator = 1n;
+  for (var i = 0n; i < k; ++i) {
+    numerator *= (n - i);
+  }
+
+  var denominator = 1n;
+  for (var j = 1n; j <= k; ++j) {
+    denominator *= j;
+  }
+
+  return numerator / denominator;
+}
 </script>
 <script>
   // 総回転数に応じてBIG数とREG数の割合を更新する関数
@@ -376,9 +358,6 @@
     // 他の値も同様に割り当てる
     
     // 例として、コンソールに値を出力してみます
-    console.log("Value 1:", v1);
-    console.log("Value 2:", v2);
-    console.log("Value 3:", v3);
     // 他の値も同様にコンソールに出力
     
     // 必要に応じて値を返す
@@ -418,18 +397,57 @@
     var buRatio = (totalRotations === 0) ? 0 : (totalRotations/buCount).toFixed(2);
     var cheRatio = (totalRotations === 0) ? 0 : (totalRotations/cheCount).toFixed(2);
     var bonusRatio = (totalRotations === 0) ? 0 : (totalRotations/(bigCount+regCount)).toFixed(2);
-    var bb_combi = combi_reduction(totalRotations, bigCount);
-    var rb_combi = combi_reduction(totalRotations, regCount);
+    
+    var totalRotationsn = BigInt(totalRotations);
+    var bigCountn = BigInt(bigCount);
+    var regCountn = BigInt(regCount);
+    var bb_combin = combi_reduction(totalRotationsn, bigCountn);
+    var rb_combin = combi_reduction(totalRotationsn, regCountn);
+    var threshold = BigInt(10) ** BigInt(200);
+    var thresholds = BigInt(10) ** BigInt(180);
+    var thresholda = BigInt(10) ** BigInt(230);
+
+// どちらかが10^200を超えている場合の処理
+if (bb_combin > threshold || rb_combin > threshold) {
+    // 両方の値が10^200以下になるまで10^200を引く
+    while (bb_combin > threshold || rb_combin > threshold) {
+      if (bb_combin > thresholda || rb_combin > thresholda) {
+        bb_combin /= threshold;
+        rb_combin /= threshold;
+        }else{
+        bb_combin /= thresholds;
+        rb_combin /= thresholds;
+        }
+    }
+}
+    var bb_combi = Number(bb_combin);
+    var rb_combi = Number(rb_combin);
+    if (bb_combi < 1) {
+      bb_combi = 1
+    }
+    if (rb_combi < 1) {
+      rb_combi = 1
+    }
+    console.log("bb_combi", bb_combi);
+    console.log("bb_combi", rb_combi);
+    
     var bb = bigCount
     var rb = regCount
     var times = totalRotations
+    console.log("bb", bb);
+    console.log("rb", rb);
+    console.log("ti", times);
     
     
     // BIG計算
     var pb_bb_1_left = bb_1;
+    console.log("pb_bb_1_left", pb_bb_1_left);
     pb_bb_1_left **= bb;
+    console.log("pb_bb_1_left", pb_bb_1_left);
     var pb_bb_1_right = 1 - bb_1;
+    console.log("pb_bb_1_right", pb_bb_1_right);
     pb_bb_1_right **= (times - bb);
+    console.log("pb_bb_1_right", pb_bb_1_right);
     
     var pb_bb_2_left = bb_2;
     pb_bb_2_left **= bb;
@@ -455,8 +473,8 @@
     pb_bb_6_left **= bb;
     var pb_bb_6_right = 1 - bb_6;
     pb_bb_6_right **= (times - bb);
-    
     var value_bb_1 = bb_combi * pb_bb_1_left * pb_bb_1_right;
+    console.log("value_bb_1", value_bb_1);
     var value_bb_2 = bb_combi * pb_bb_2_left * pb_bb_2_right;
     var value_bb_3 = bb_combi * pb_bb_3_left * pb_bb_3_right;
     var value_bb_4 = bb_combi * pb_bb_4_left * pb_bb_4_right;
@@ -469,8 +487,13 @@
                      value_bb_4 +
                      value_bb_5 +
                      value_bb_6;
+    console.log("bb_base", bb_base);
     
+    if (bb_base < 1) {
+      bb_base = 1
+    }
     value_bb_1 = 100 / bb_base * value_bb_1;
+    console.log("value_bb_1", value_bb_1);
     value_bb_2 = 100 / bb_base * value_bb_2;
     value_bb_3 = 100 / bb_base * value_bb_3;
     value_bb_4 = 100 / bb_base * value_bb_4;
@@ -509,6 +532,7 @@
     pb_rb_6_right **= (times - rb);
     
     var value_rb_1 = rb_combi * pb_rb_1_left * pb_rb_1_right;
+    console.log("value_rb_1", value_rb_1);
     var value_rb_2 = rb_combi * pb_rb_2_left * pb_rb_2_right;
     var value_rb_3 = rb_combi * pb_rb_3_left * pb_rb_3_right;
     var value_rb_4 = rb_combi * pb_rb_4_left * pb_rb_4_right;
@@ -522,7 +546,11 @@
                      value_rb_5 +
                      value_rb_6;
     
+    if (rb_base < 1) {
+      rb_base = 1
+    }
     value_rb_1 = 100 / rb_base * value_rb_1;
+    console.log("value_rb_1", value_rb_1);
     value_rb_2 = 100 / rb_base * value_rb_2;
     value_rb_3 = 100 / rb_base * value_rb_3;
     value_rb_4 = 100 / rb_base * value_rb_4;
@@ -535,6 +563,7 @@
     
     // 設定ごとの確率
     var total_value_1 = (value_bb_1 + value_rb_1 * inclination) * config_per_1;
+    console.log("total_value_1", total_value_1);
     var total_value_2 = (value_bb_2 + value_rb_2 * inclination) * config_per_2;
     var total_value_3 = (value_bb_3 + value_rb_3 * inclination) * config_per_3;
     var total_value_4 = (value_bb_4 + value_rb_4 * inclination) * config_per_4;
@@ -554,15 +583,13 @@
 
     
     // グラフ左側表示用割合
-    var total_per_1 = Math.round(100 / total_base * total_value_1 * 10) / 10;
-    var total_per_2 = Math.round(100 / total_base * total_value_2 * 10) / 10;
-    var total_per_3 = Math.round(100 / total_base * total_value_3 * 10) / 10;
-    var total_per_4 = Math.round(100 / total_base * total_value_4 * 10) / 10;
-    var total_per_5 = Math.round(100 / total_base * total_value_5 * 10) / 10;
-    var total_per_6 = Math.round(100 / total_base * total_value_6 * 10) / 10;
+    var total_per_1 = Math.round(100 / total_base * total_value_1*100) / 100;
+    var total_per_2 = Math.round(100 / total_base * total_value_2*100) / 100;
+    var total_per_3 = Math.round(100 / total_base * total_value_3*100) / 100;
+    var total_per_4 = Math.round(100 / total_base * total_value_4*100) / 100;
+    var total_per_5 = Math.round(100 / total_base * total_value_5*100) / 100;
+    var total_per_6 = Math.round(100 / total_base * total_value_6*100) / 100;
     console.log("Value 1:", total_per_1);
-    console.log("Value 2:", total_per_2);
-    console.log("Value 3:", total_per_3);
     bigRatioSpan.textContent = `(1/${bigRatio})`;
     regRatioSpan.textContent = `(1/${regRatio})`;
     buRatioSpan.textContent = `(1/${buRatio})`;
@@ -582,7 +609,17 @@
     document.getElementById('bar6').style.width = (total_per_6 / 100) * 100 + '%';
 
   }
-
+  hama.addEventListener('input', function() {
+    // フォームの値を取得し、二乗して結果を表示
+    const inputValue = parseFloat(hama.value);
+    kak1s.textContent = `${Math.round((1-(1/v13))**inputValue*1000)/10}%`;
+    kak2s.textContent = `${Math.round((1-(1/v14))**inputValue*1000)/10}%`;
+    kak3s.textContent = `${Math.round((1-(1/v15))**inputValue*1000)/10}%`;
+    kak4s.textContent = `${Math.round((1-(1/v16))**inputValue*1000)/10}%`;
+    kak5s.textContent = `${Math.round((1-(1/v17))**inputValue*1000)/10}%`;
+    kak6s.textContent = `${Math.round((1-(1/v18))**inputValue*1000)/10}%`;
+  });
   // 初期化時に割合を更新
   updateRatios();
-  </script></body></html>
+  </script>
+</body></html>
