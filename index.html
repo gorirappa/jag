@@ -19,9 +19,9 @@
     margin-right: 10px;
   }
   .counter input {
-    width: 160px;
+    width: 100px;
     text-align: right;
-    font-size: 36px; /* カウンターの縦の大きさを2倍に */
+    font-size: 30px; /* カウンターの縦の大きさを2倍に */
   }
   .counter button {
     width: 60px;
@@ -42,7 +42,7 @@
     height: 20px;
     background-color: #ddd;
     margin-bottom: 10px;
-    margin-left: 60px;
+    margin-left: 20px;
     display: flex;
     align-items: left;
     position: relative;
@@ -91,21 +91,21 @@
   <button id="decrementBu">-</button>
   <input type="number" id="bu" value="0" min="0" step="1">
   <button id="incrementBu">🍇</button>
-<span id="buRatio">(1/Infinity)</span></div><div class="counter">
+<span id="buRatio">(1/0)</span></div><div class="counter">
   <button id="decrementChe">-</button>
   <input type="number" id="che" value="0" min="0" step="1">
   <button id="incrementChe">🍒</button>
-<span id="cheRatio">(1/Infinity)</span></div><div class="counter">
+<span id="cheRatio">(1/0)</span></div><div class="counter">
   
   <button id="decrementBig">-</button><input type="number" id="bigCount" value="0" min="0" step="1">
   
   <button id="incrementBig">BIG</button>
-<span id="bigRatio">(1/100.40)</span></div>
+<span id="bigRatio">(1/0)</span></div>
 
 <div class="counter">
   
   <button id="decrementReg">-</button><input type="number" id="regCount" value="0" min="0" step="1">
-  <button id="incrementReg">REG</button><span id="regRatio">(1/251.00)</span>
+  <button id="incrementReg">REG</button><span id="regRatio">(1/0)</span>
   
 </div>
 
@@ -116,7 +116,7 @@
 <div class="counter">
   
   <button id="no"></button><input type="number" id="bonusCount" value="0" min="0" step="1">
-  <button id="no">合成</button><span id="bonusRatio">(1/71.71)</span>
+  <button id="no">合成</button><span id="bonusRatio">(1/0)</span>
   
 </div>
 <div class="mozi">
@@ -124,31 +124,31 @@
   
   <span>設定</span>
   
-<span style="margin-left:180pt">確率</span><input type="number" class="cou2" style="margin-left:50pt" id="hama"><span style="a">回転後まで<br>　　　　　　　　　　　　　　　　　　　　　　　　ハマる確率</span></div><div class="chart">
+<span style="margin-left:150pt">確率</span><input type="number" class="cou2" style="margin-left:40pt" id="hama"><span style="a">回転後まで<br>　　　　　　　　　　　　　　　　　　　　ハマる確率</span></div><div class="chart">
   <div class="bar">
     
-    <div class="bar-inner" id="bar1" style="width: 12.35%;"></div>
-  <span class="bar-number">1</span><span class="bar-left" id="ka1">12.35%</span><span class="bar-left" id="kak1" style="margin-left:110pt">25.5%</span></div>
+    <div class="bar-inner" id="bar1" style="width: 26.09%;"></div>
+  <span class="bar-number">1</span><span class="bar-left" id="ka1">26.09%</span><span class="bar-left" id="kak1" style="margin-left:90pt">25.5%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar2" style="width: 10.77%;"></div>
-  <span class="bar-number">2</span><span class="bar-left" id="ka2">10.77%</span><span class="bar-left" id="kak2" style="margin-left:110pt">24.5%</span></div>
+    <div class="bar-inner" id="bar2" style="width: 17.39%;"></div>
+  <span class="bar-number">2</span><span class="bar-left" id="ka2">17.39%</span><span class="bar-left" id="kak2" style="margin-left:90pt">24.5%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar3" style="width: 17.73%;"></div>
-  <span class="bar-number">3</span><span class="bar-left" id="ka3">17.73%</span><span class="bar-left" id="kak3" style="margin-left:110pt">22.2%</span></div>
+    <div class="bar-inner" id="bar3" style="width: 17.39%;"></div>
+  <span class="bar-number">3</span><span class="bar-left" id="ka3">17.39%</span><span class="bar-left" id="kak3" style="margin-left:90pt">22.2%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar4" style="width: 25.08%;"></div>
-  <span class="bar-number">4</span><span class="bar-left" id="ka4">25.08%</span><span class="bar-left" id="kak4" style="margin-left:110pt">19.1%</span></div>
+    <div class="bar-inner" id="bar4" style="width: 17.39%;"></div>
+  <span class="bar-number">4</span><span class="bar-left" id="ka4">17.39%</span><span class="bar-left" id="kak4" style="margin-left:90pt">19.1%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar5" style="width: 20.64%;"></div>
-  <span class="bar-number">5</span><span class="bar-left" id="ka5">20.64%</span><span class="bar-left" id="kak5" style="margin-left:110pt">17.1%</span></div>
+    <div class="bar-inner" id="bar5" style="width: 13.04%;"></div>
+  <span class="bar-number">5</span><span class="bar-left" id="ka5">13.04%</span><span class="bar-left" id="kak5" style="margin-left:90pt">17.1%</span></div>
   <div class="bar">
     
-    <div class="bar-inner" id="bar6" style="width: 13.43%;"></div>
-  <span class="bar-number">6</span><span class="bar-left" id="ka6">13.43%</span><span class="bar-left" id="kak6" style="margin-left:110pt">14.2%</span></div>
+    <div class="bar-inner" id="bar6" style="width: 8.7%;"></div>
+  <span class="bar-number">6</span><span class="bar-left" id="ka6">8.7%</span><span class="bar-left" id="kak6" style="margin-left:90pt">14.2%</span></div>
 </div>
 
 <script>
